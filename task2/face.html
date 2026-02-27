@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Facebook Sign Up</title>
+    <script src="face.js" defer></script>
+    <link rel="stylesheet" href="face.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+      <img
+        src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+        alt="Facebook"
+        class="fb-logo"
+      />
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <h2>Create a new account</h2>
+        <p class="subtitle">It's quick and easy.</p>
+      </div>
+      <hr class="divider" />
+      <div class="card-bottom">
+        <form id="signup-form" action="#" method="post" novalidate>
+          <div class="name-row">
+            <div class="field">
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="First name"
+                required
+                minlength="2"
+                maxlength="50"
+                pattern="[A-Za-z][A-Za-z\s'\-]{1,49}"
+              />
+              <span class="error-text" data-for="first_name"></span>
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                placeholder="Last name"
+                required
+                minlength="2"
+                maxlength="50"
+                pattern="[A-Za-z][A-Za-z\s'\-]{1,49}"
+              />
+              <span class="error-text" data-for="last_name"></span>
+            </div>
+          </div>
+
+        <p class="label">Date of birth</p>
+
+        <div class="dob-row">
+          <select name="birth_day" id="birth_day" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+          </select>
+          <select name="birth_month" id="birth_month" required>
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Jul</option>
+            <option>Aug</option>
+            <option>Sep</option>
+            <option>Oct</option>
+            <option>Nov</option>
+            <option>Dec</option>
+          </select>
+          <select name="birth_year" id="birth_year" required>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+          </select>
+        </div>
+        <span class="error-text" data-for="dob"></span>
+
+        <p class="label">Gender</p>
+
+        <div class="gender-row">
+          <label class="gender-box">
+            <span>Female</span>
+            <input type="radio" name="gender" value="female" required />
+          </label>
+
+          <label class="gender-box">
+            <span>Male</span>
+            <input type="radio" name="gender" value="male" required />
+          </label>
+
+          <label class="gender-box">
+            <span>Custom</span>
+            <input type="radio" name="gender" value="custom" required />
+          </label>
+        </div>
+        <span class="error-text" data-for="gender"></span>
+
+        <input
+          class="full"
+          type="text"
+          name="contact"
+          id="contact"
+          placeholder="Mobile number or email address"
+          required
+          pattern="(^[6-9][0-9]{9}$)|(^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$)"
+        />
+        <span class="error-text" data-for="contact"></span>
+        <input
+          class="full"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="New password"
+          required
+          minlength="6"
+          maxlength="8"
+          pattern="(?=.*[A-Z]).{6,8}"
+        />
+        <span class="error-text" data-for="password"></span>
+
+        <p class="small-text">
+          People who use our service may have uploaded your contact information
+          to Facebook. <a href="#">Learn more.</a>
+        </p>
+
+        <p class="small-tex">
+          By clicking Sign Up, you agree to our Terms, Privacy Policy and
+          Cookies. You may receive SMS notifications from Facebook, and you can
+          opt out at any time.
+        </p>
+
+        <button type="submit">Sign up</button>
+
+        <p class="sub_title_6" id="sub_title"><a href="./fblogin.html" class="sub_title_6">Already have an account?</a></p>
+        </form>
+      </div>
+    </div>
+
+    <footer class="fb-footer">
+      <div class="footer-top">
+        <div class="lang-row">
+          <div class="langs">
+            <p
+              style="
+                font-size: 12px;
+                font-family: Helvetica, Arial, sans-serif;
+                color: #7d8692;
+              "
+            >
+              English (UK)
+            <a href="#">ಕನ್ನಡ</a>
+            <a href="#">తెలుగు</a>
+            <a href="#">मराठी</a>
+            <a href="#">हिन्दी</a>
+            <a href="#">தமிழ்</a>
+            <a href="#">മലയാളം</a>
+            <a href="#">বাংলা</a>
+            <a href="#">ગુજરાતી</a>
+            <a href="#">ਪੰਜਾਬੀ</a>
+          </div>
+
+          <div class="plus-box">+</div>
+          </p>
+        </div>
+
+        <hr class="footer-line" />
+      </div>
+      <div class="footer-bottom">
+        <div class="links-row">
+          <a href="#">Sign up</a>  <a href="#">Log in</a> 
+          <a href="#">Messenger</a>  <a href="#">Facebook Lite</a> 
+          <a href="#">Video</a>  <a href="#">Meta Pay</a> 
+          <a href="#">Meta Store</a>  <a href="#">Meta Quest</a> 
+          <a href="#">Ray-Ban Meta</a>  <a href="#">Meta AI</a> 
+          <a href="#">Meta AI more content</a>  <a href="#">Instagram</a> 
+          <a href="#">Threads</a>  <a href="#">Voting Information Centre</a> 
+          <a href="#">Privacy Policy</a>  <a href="#">Privacy Centre</a> 
+          <a href="#">About</a>  <a href="#">Create ad</a> 
+          <a href="#">Create Page</a>  <a href="#">Developers</a> 
+          <a href="#">Careers</a>  <a href="#">Cookies</a> 
+          <a href="#">AdChoices</a>  <a href="#">Terms</a> 
+          <a href="#">Help</a> 
+          <a href="#">Contact uploading and non-users</a>
+        </div>
+
+        <p class="meta">Meta © 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>
