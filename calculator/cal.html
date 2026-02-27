@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standard Calculator</title>
+    <link rel="stylesheet" href="cal.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="calculator">
+        <header class="top-bar">
+          <h1>Standard</h1>
+          <div class="history-tabs">
+            <button class="tab active">History</button>
+            <button class="tab">Memory</button>
+          </div>
+        </header>
+
+        <div class="display">
+          <div id="expression" class="expression"></div>
+          <div id="result" class="result">0</div>
+        </div>
+
+        <div class="memory-row">
+          <span>MC</span>
+          <span>MR</span>
+          <span>M+</span>
+          <span>M-</span>
+          <span>MS</span>
+        </div>
+
+        <table class="buttons" id="buttons">
+          <tbody>
+            <tr>
+              <td><button data-action="percent">%</button></td>
+              <td><button data-action="clear-entry">CE</button></td>
+              <td><button data-action="clear">C</button></td>
+              <td><button data-action="delete">&larr;</button></td>
+            </tr>
+            <tr>
+              <td><button data-action="reciprocal">1/x</button></td>
+              <td>
+                <button data-action="square">x<sup>2</sup></button>
+              </td>
+              <td><button data-action="sqrt">sqrt</button></td>
+              <td><button data-action="operator" data-value="/">/</button></td>
+            </tr>
+            <tr>
+              <td><button data-action="number" data-value="7">7</button></td>
+              <td><button data-action="number" data-value="8">8</button></td>
+              <td><button data-action="number" data-value="9">9</button></td>
+              <td><button data-action="operator" data-value="*">*</button></td>
+            </tr>
+            <tr>
+              <td><button data-action="number" data-value="4">4</button></td>
+              <td><button data-action="number" data-value="5">5</button></td>
+              <td><button data-action="number" data-value="6">6</button></td>
+              <td><button data-action="operator" data-value="-">-</button></td>
+            </tr>
+            <tr>
+              <td><button data-action="number" data-value="1">1</button></td>
+              <td><button data-action="number" data-value="2">2</button></td>
+              <td><button data-action="number" data-value="3">3</button></td>
+              <td><button data-action="operator" data-value="+">+</button></td>
+            </tr>
+            <tr>
+              <td><button data-action="sign">+/-</button></td>
+              <td><button data-action="number" data-value="0">0</button></td>
+              <td><button data-action="dot">.</button></td>
+              <td><button class="equals" data-action="equals">=</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside class="history-panel">
+        <div id="historyList" class="history-list">
+          <p class="empty-history">No history yet</p>
+        </div>
+      </aside>
+    </main>
+
+    <script src="cal.js"></script>
+  </body>
+</html>
